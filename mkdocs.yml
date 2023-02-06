@@ -1,7 +1,7 @@
 site_name: GeoNature Zones Humides · Atlas
 
-repo_name: geonature/zones-humides/atlas
-repo_url: https://gitlab.com/natural-solutions/geonature/zones-humides/atlas
+repo_name: GeoNature-ZH-atlas
+repo_url: https://github.com/PnX-SI/GeoNature-ZH-atlas
 
 theme:
   name: material

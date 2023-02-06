@@ -1,6 +1,6 @@
 ## Structure du projet
 
-La configuration se trouve dans le dossier [`./data/config.yml`](https://gitlab.com/natural-solutions/geonature/zones-humides/atlas/-/blob/1-write-docs-to-install-and-config/data/config.yml){.external-link target=\_blank} et est écrite au format [YAML][yaml]{ .external-link target=\_blank}.
+La configuration se trouve dans le dossier [`./data/config.yml`](https://github.com/PnX-SI/GeoNature-ZH-atlas/blob/main/data/config.yml){.external-link target=\_blank} et est écrite au format [YAML][yaml]{ .external-link target=\_blank}.
 
 ```bash
 .
