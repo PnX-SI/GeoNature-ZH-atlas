@@ -43,9 +43,3 @@ git push origin main
 ```bash
 docker-compose up -d --build atlas
 ```
-
-#### ou Démarrer le projet avec `nginx`
-
-```bash
-docker-compose up -d --build atlas-nginx
-```
