@@ -5,6 +5,7 @@ services:
 #    image: ghcr.io/pnx-si/atlas-zh:main # prod image
     volumes:
       - ./public:/app/public
+      - ./data:/app/data
     ports:
       - "3000:3000"
     command: npm run start_local

@@ -212,10 +212,14 @@ pages:
 URL de l'API du module GeoNature sur les zones humides permettant 
 notamment d'obtenir les photos de chaque zone humide
 
+La variable `API_ENDPOINT` utilisée dans les exemples est définie dans le projet Geonature dans le fichier `config/geonature_config.
+
+Exemple de valeur : `API_ENDPOINT = 'https://mondomaine/geonature/api'
+
 ```yaml
 ---
 dependencies:
-  apiurl: http://localhost:8000/zones_humides/
+  apiurl: API_ENDPOINT/zones_humides/
 ---
 ```
 
@@ -229,8 +233,14 @@ géométries et informations des zones humides.
 ```yaml
 ---
 dependencies:
-  pbf: http://localhost:8000/zones_humides/pbf/complete
+  pbf: API_ENDPOINT/zones_humides/pbf/complete
 ---
+```
+
+Afin d'avoir les zones humides à jour, il est possible sur le serveur de rajouter une crontab pour re-générer le fichier pbf :
+
+```sh
+wget API_ENDPOINT/zones_humides/pbf/complete -O PATH_TO_GEONATURE_DIR/public/geonature.pbf
 ```
 
 ##### PDF
@@ -241,7 +251,7 @@ PDF de chaque zone humide.
 ```yaml
 ---
 dependencies:
-  pdf: http://localhost:8000/zones_humides/export_pdf
+  pdf: API_ENDPOINT/zones_humides/export_pdf
 ---
 ```
 
@@ -286,8 +296,8 @@ map:
 ```yaml
 dependencies:
   apiurl: http://localhost:8000/zones_humides/
-  pdf: http://localhost:8000/zones_humides/export_pdf
-  pbf: http://localhost:8000/zones_humides/pbf/complete
+  pdf: API_ENDPOINT/zones_humides/export_pdf
+  pbf: API_ENDPOINT/zones_humides/pbf/complete
 
 map:
   layers:

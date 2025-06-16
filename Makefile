@@ -16,7 +16,16 @@ API_ENDPOINT = http://localhost:8000/api
 -include Makefile.perso.mk
 
 ###########################
-#        Variables        #
+#      Environment        #
+###########################
+
+.PHONY: create_venv
+create_venv:
+	$(call display_cmd, Create venv)
+	python3 -m venv .venv
+
+###########################
+#        manage pbf       #
 ###########################
 
 .PHONY: get_pbf
@@ -48,3 +57,12 @@ define display_cmd
 	@$(PRINT_COLOR) "$(COLOR_SUCCESS) ### $(1) $(COLOR_RESET)\n"
 	@$(PRINT_COLOR) "$(COLOR_SUCCESS) ########################## $(COLOR_RESET)\n\n"
 endef
+
+###########################
+#        Launch doc       #
+###########################
+
+.PHONY: launch_doc
+launch_doc:
+	$(call display_cmd, Launch doc)
+	.venv/bin/mkdocs serve
