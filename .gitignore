@@ -3,3 +3,7 @@ node_modules
 .vscode
 .next
 out
+.venv
+.idea
+Makefile.perso.mk
+public/geonature.pbf
