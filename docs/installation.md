@@ -1,4 +1,21 @@
-## Installation
+
+## Cloner le projet :
+
+En https :
+
+```sh
+git clone https://github.com/PnX-SI/GeoNature-ZH-atlas.git
+cd GeoNature-ZH-atlas
+```
+
+En ssh :
+
+```sh
+git clone git@github.com:PnX-SI/GeoNature-ZH-atlas.git
+cd GeoNature-ZH-atlas
+```
+
+## Installation avec `npm`
 
 <div class="termy">
 
@@ -6,6 +23,25 @@
 npm install
 
 ---> 100%
+```
+
+</div>
+
+## Lancer le projet en mode développement
+
+<div class="termy">
+
+```console
+npm run dev
+
+---> 100%
+
+> atlas@1.0.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+Defining routes from exportPathMap
+event - compiled client and server successfully in 901 ms (1078 modules)
 ```
 
 </div>

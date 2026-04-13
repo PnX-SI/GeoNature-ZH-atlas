@@ -1,7 +1,7 @@
 dependencies:
-  apiurl: http://localhost:8000/zones_humides/
-  pdf: http://localhost:8000/zones_humides/export_pdf
-  pbf: http://localhost:8000/zones_humides/pbf/complete
+  apiurl: http://localhost:8000/api/zones_humides
+  pdf: http://localhost:8000/api/zones_humides/export_pdf
+  pbf: http://localhost:8000/api/zones_humides/pbf/complete
 
 map:
   layers:

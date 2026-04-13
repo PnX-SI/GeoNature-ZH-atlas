@@ -6,3 +6,7 @@ node_modules
 Makefile.local
 .next
 out
+.venv
+.idea
+Makefile.perso.mk
+public/geonature.pbf
