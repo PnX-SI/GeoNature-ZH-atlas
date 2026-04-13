@@ -75,12 +75,20 @@ const Form: FC = () => {
               value={(zoneHumide.superficie / 10000).toFixed(2)}
             />
             <FormItem
+              label="Maitre d'ouvrage de l'inventaire :"
+              value={zoneHumide.product_owner ? zoneHumide.product_owner : "Aucun"}
+            />
+            <FormItem
               label="Opérateur de l’inventaire :"
               value={zoneHumide.operateur}
             />
             <FormItem
               label="Date :"
               value={new Date(zoneHumide.date).toLocaleDateString('fr')}
+            />
+            <FormItem
+              label="Échelle de visualisation :"
+              value={zoneHumide.input_scale ? `1/${zoneHumide.input_scale}ème` : "Non renseignée"}
             />
             <FormItem
               label="Critère(s) de délimitation :"

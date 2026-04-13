@@ -7,6 +7,8 @@ export interface ZoneHumide {
   id: number
   nom: string
   slug: string
+  product_owner: string
+  input_scale: number
   code: string
   date: Date
   type: string
